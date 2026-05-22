@@ -1,4 +1,4 @@
-import { SPEAKER_FORM_URL } from "../../../data/Links";
+import { GENERAL_URLS } from "../../../data/Links";
 import { SPEAKERS_DATA } from "../../../data/Speakers";
 import { CustomSection } from "../../Universal/CustomSection";
 import OverprintTitle from "../../Universal/OverprintTitle";
@@ -6,14 +6,14 @@ import { PersonCard } from "../../Universal/PersonCard";
 
 export const SpeakersSection = () => {
   const handleApplyClick = () => {
-    window.open(SPEAKER_FORM_URL, "_blank");
+    window.open(GENERAL_URLS.SPEAKER_FORM_URL, "_blank");
   };
 
   return (
     <CustomSection bg="bg-whiteBG" id="speakers">
       <OverprintTitle
         title="THE SPEAKERS"
-        subtitle="MEET OUR"
+        subtitle="MEET"
         className="mb-12 md:mb-16"
       />
 

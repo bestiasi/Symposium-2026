@@ -3,7 +3,7 @@ import OverprintTitle from "../../Universal/OverprintTitle";
 import { SectionContent } from "../../Universal/SectionContent";
 import TUIASI from "../../../assets/logos/partners/event/TUIASI.png";
 import INGENIUM from "../../../assets/logos/partners/event/ingenium.svg";
-import { INGENIUM_LINK, TUIASI_LINK } from "../../../data/Links";
+import { SPONSOR_LINKS } from "../../../data/Links";
 
 export const EventPartnersSection = () => {
   return (
@@ -27,7 +27,9 @@ export const EventPartnersSection = () => {
           <SectionContent
             buttonText="Learn More"
             analyticsLabel="Partner: TUIASI"
-            onButtonClick={() => window.open(TUIASI_LINK, "_blank")}
+            onButtonClick={() =>
+              window.open(SPONSOR_LINKS.TUIASI_LINK, "_blank")
+            }
             className="w-full md:w-1/2 text-justify"
           >
             <p>
@@ -58,7 +60,9 @@ export const EventPartnersSection = () => {
           <SectionContent
             buttonText="Learn More"
             analyticsLabel="Learn More"
-            onButtonClick={() => window.open(INGENIUM_LINK, "_blank")}
+            onButtonClick={() =>
+              window.open(SPONSOR_LINKS.INGENIUM_LINK, "_blank")
+            }
             className="w-full md:w-1/2 text-justify"
           >
             <p>

@@ -9,12 +9,7 @@ import SocialLinks from "./SocialLinks";
 import CustomContainer from "./CustomContainer";
 import gyroscopImg from "../../assets/svgs/gyroscop.svg";
 import sigla_best_alba from "../../assets/logos/best.svg";
-import {
-  VOLUNTEER_FORM_URL,
-  GDPR_BIS_LINK,
-  // GDPR_OOD_LINK,
-  GDPR_BEST_LINK,
-} from "../../data/Links";
+import { GENERAL_URLS } from "../../data/Links";
 import { PrimaryButton } from "./PrimaryButton";
 
 const SITE_MAP = [
@@ -27,8 +22,8 @@ const SITE_MAP = [
 // { name: "GDPR OOD 2026", to: GDPR_OOD_LINK },
 
 const LEGAL_LINKS = [
-  { name: "GDPR BIS/OOD 2026", to: GDPR_BIS_LINK },
-  { name: "GDPR BEST Iasi", to: GDPR_BEST_LINK },
+  { name: "GDPR BIS/OOD 2026", to: GENERAL_URLS.GDPR_BIS_LINK },
+  { name: "GDPR BEST Iasi", to: GENERAL_URLS.GDPR_BEST_LINK },
 ];
 
 const CONTACT_INFO = {
@@ -45,7 +40,7 @@ const CONTACT_INFO = {
   email: "contact@bestis.ro",
   phone: "+40 754 665 038",
   phoneLink: "+40754665038",
-  redirectLink: VOLUNTEER_FORM_URL,
+  redirectLink: GENERAL_URLS.VOLUNTEER_FORM_URL,
 };
 
 const FooterHeading = ({ children }: { children: React.ReactNode }) => (

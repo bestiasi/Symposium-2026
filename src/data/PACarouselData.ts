@@ -1,105 +1,41 @@
-import NAGARRO from "../assets/logos/partners/pa/nagarro.svg";
-import BURN from "../assets/logos/partners/pa/burn.png";
-import MAGNA from "../assets/logos/partners/pa/magna.svg";
-import MIGDALIN from "../assets/logos/partners/pa/migdalin.svg";
-import IULIUS from "../assets/logos/partners/pa/iulius.svg";
-import WINK from "../assets/logos/partners/pa/wink.svg";
-import BRD from "../assets/logos/partners/pa/brd.svg";
-import FFFF from "../assets/logos/partners/pa/fff.png";
-import FDSC from "../assets/logos/partners/pa/fdsc.png";
-import JUMPY from "../assets/logos/partners/pa/jumpy.webp";
-import VIVAFM from "../assets/logos/partners/pa/vivafm.webp";
+import { SPONSOR_LINKS } from "./Links";
 
-import {
-  IULIUS_LINK,
-  WINK_LINK,
-  BURN_LINK,
-  MAGNA_LINK,
-  MIGDALIN_LINK,
-  NAGARRO_LINK,
-  BRD_LINK,
-  FFFF_LINK,
-  FDSC_LINK,
-  JUMPY_LINK,
-  VIVAFM_LINK,
-} from "./Links";
+// 1. Target the partner logos using Vite's glob pattern
+const logoModules = import.meta.glob(
+  "../assets/logos/partners/pa/*.{png,svg,webp,jpg,jpeg}",
+  {
+    eager: true,
+    import: "default",
+  },
+);
 
-export const PA_CAROUSEL_ITEMS = [
-  {
-    id: 1,
-    imageSrc: WINK,
-    altText: "WINK",
-    Url: WINK_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 2,
-    imageSrc: NAGARRO,
-    altText: "NAGARRO",
-    Url: NAGARRO_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 3,
-    imageSrc: IULIUS,
-    altText: "IULIUS MALL IASI",
-    Url: IULIUS_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 4,
-    imageSrc: BURN,
-    altText: "BURN ENERGY DRINK",
-    Url: BURN_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 5,
-    imageSrc: MAGNA,
-    altText: "MAGNA",
-    Url: MAGNA_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 6,
-    imageSrc: MIGDALIN,
-    altText: "MIGDALIN",
-    Url: MIGDALIN_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 7,
-    imageSrc: BRD,
-    altText: "BRD",
-    Url: BRD_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 8,
-    imageSrc: FDSC,
-    altText: "Civil Society Development Foundation",
-    Url: FDSC_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 9,
-    imageSrc: FFFF,
-    altText: "Friends For Friends Foundation",
-    Url: FFFF_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 10,
-    imageSrc: JUMPY,
-    altText: "JUMPY",
-    Url: JUMPY_LINK,
-    isRedirect: false,
-  },
-  {
-    id: 11,
-    imageSrc: VIVAFM,
-    altText: "VIVA FM",
-    Url: VIVAFM_LINK,
-    isRedirect: false,
-  },
-];
+// 2. Custom mapping for outliers where filenames don't cleanly match the alt text
+const CUSTOM_ALT_TEXTS: Record<string, string> = {
+  FFF: "Friends For Friends Foundation",
+  FDSC: "Civil Society Development Foundation",
+  IULIUS: "IULIUS MALL IASI",
+  BURN: "BURN ENERGY DRINK",
+  VIVAFM: "VIVA FM",
+};
+
+// 3. Extract and build only the items from the 'pa' subfolder
+export const PA_CAROUSEL_ITEMS = Object.entries(logoModules)
+  // Filter to only include images coming from the /partners/pa/ directory
+  .filter(([path]) => path.includes("/partners/pa/"))
+  .map(([path, src], index) => {
+    // Extract filename (e.g., 'fff' from '../assets/logos/partners/pa/fff.png')
+    const fileName = path.split("/").pop()?.split(".")[0] || "";
+    const nameUpper = fileName.toUpperCase();
+
+    // Look up link inside our clean SPONSOR_LINKS object
+    const linkKey = `${nameUpper}_LINK`;
+    const targetUrl = (SPONSOR_LINKS as any)[linkKey];
+
+    return {
+      id: index + 1,
+      imageSrc: src as string,
+      altText: CUSTOM_ALT_TEXTS[nameUpper] || nameUpper,
+      Url: targetUrl || "#",
+      isRedirect: false, // Matches your original static data setting
+    };
+  });

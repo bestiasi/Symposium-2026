@@ -16,35 +16,37 @@ export const ConferenceIntroSection = () => {
         <SectionContent className="w-full md:w-[60%] text-justify">
           <div className="flex flex-col gap-6 text-darkTxt text-lg leading-relaxed">
             <p>
-              <strong>Empower STEM: Mobility Conference</strong> is a premier
-              international <strong>conference</strong> exploring how{" "}
-              <strong>multiculturalism</strong> in <strong>STEM</strong>{" "}
-              empowers diversity and drives innovation. Taking place on{" "}
-              <strong>July 12th, 2026, in Iași, Romania</strong>, this event
-              brings together students, academic mentors, and{" "}
-              <strong>STEM industry leaders</strong> from across Europe to shape
-              the future of <strong>international student mobility</strong>.
+              <strong>BEST Intercultural Conference</strong> is a premier
+              international event exploring how multiculturalism in today's
+              society empowers diversity and drives innovation.
+            </p>
+            <p>
+              Taking place on <strong>July 12th, 2026, in Iași, Romania</strong>
+              , this event brings together students, academics, mentors, and NGO
+              leaders from across Europe to shape the future of new generations
+              and better understand how multicultural societies function.
             </p>
 
             <p>
-              In a globalized world, education thrives on cross-cultural
-              collaboration. We believe that{" "}
-              <strong>international exchange programs</strong> and diverse
-              perspectives are essential for building{" "}
-              <strong>global career paths</strong> and inclusive professional
-              environments.
+              In a globalized world, education thrives on{" "}
+              <strong>cross-cultural</strong>
+              collaboration. We believe that international exchange programs and
+              diverse perspectives are essential for building{" "}
+              <strong>global career</strong>
+              paths and <strong>inclusive professional environments</strong>.
             </p>
 
             <p>
-              <strong>Empower STEM: Mobility Conference</strong> is where
-              multicultural ideas transform into action. Whether you want to
-              explore international opportunities, connect with{" "}
-              <strong>global tech companies</strong>, or be inspired by diverse
-              keynote speakers, this is the place to be.
+              <strong>BEST Intercultural Conference</strong> is where
+              multicultural ideas turn into action. Whether you want to explore
+              <strong>international opportunities</strong>, connect with
+              speakers and students from around the world, or be inspired by
+              diverse <strong>keynote speakers</strong>, this is the place to
+              be.
             </p>
 
             <p className="mt-2">
-              Let's reimagine <strong>STEM mobilities</strong> together!
+              Let's reimagine a <strong>multicultural world</strong> together!
             </p>
           </div>
         </SectionContent>

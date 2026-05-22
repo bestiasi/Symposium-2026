@@ -1,39 +1,26 @@
-import Ana from "../assets/team/ana.jpg";
-import Edi from "../assets/team/edi.jpg";
-import Diana from "../assets/team/diana.jpg";
-import Ovidiu from "../assets/team/ovidiu.jpg";
-import Simina from "../assets/team/simina.jpg";
-import Diana_Ch from "../assets/team/diana_ch.jpg";
-import Teo from "../assets/team/teo.jpg";
-import Valentina from "../assets/team/valentina.jpg";
-import Dana from "../assets/team/dana.jpg";
-import Ioana from "../assets/team/ioana.jpg";
-import TeoB from "../assets/team/teob.jpg";
-import Ancuta from "../assets/team/ancuta.jpg";
+import { TEAM_LINKEDINS } from "./Links";
 
-import {
-  ANA_LINKEDIN,
-  ANCUTA_LINKEDIN,
-  DANA_LINKEDIN,
-  DIANA_CH_LINKEDIN,
-  DIANA_LINKEDIN,
-  EDI_LINKEDIN,
-  IOANA_LINKEDIN,
-  OVIDIU_LINKEDIN,
-  SIMINA_LINKEDIN,
-  TEO_LINKEDIN,
-  TEODOR_LINKEDIN,
-  VALENTINA_LINKEDIN,
-} from "./Links";
+const teamImages = import.meta.glob("../assets/team/*.{png,jpg,jpeg,webp}", {
+  eager: true,
+  import: "default",
+});
 
+const getTeamImage = (fileName: string) => {
+  const match = Object.entries(teamImages).find(([path]) =>
+    path.toLowerCase().endsWith(`/${fileName.toLowerCase()}.jpg`),
+  );
+  return match ? (match[1] as string) : "";
+};
+
+// 2. Clean static data list without any boilerplate imports
 export const TEAM_MEMBERS = [
   {
     id: 1,
     lastName: "Ifrim",
     name: "Simina-Ana",
     role: "HR Organiser",
-    image: Simina,
-    linkedin: SIMINA_LINKEDIN,
+    image: getTeamImage("simina"),
+    linkedin: TEAM_LINKEDINS.SIMINA_LINKEDIN,
     shouldSplitName: true,
   },
   {
@@ -41,8 +28,8 @@ export const TEAM_MEMBERS = [
     lastName: "Ciobanu",
     name: "Ana-Maria",
     role: "Main Organizer",
-    image: Ana,
-    linkedin: ANA_LINKEDIN,
+    image: getTeamImage("ana"),
+    linkedin: TEAM_LINKEDINS.ANA_LINKEDIN,
     shouldSplitName: true,
   },
   {
@@ -50,8 +37,8 @@ export const TEAM_MEMBERS = [
     lastName: "Petrișor",
     name: "Eduard-Gabriel",
     role: "IT & Logistics",
-    image: Edi,
-    linkedin: EDI_LINKEDIN,
+    image: getTeamImage("edi"),
+    linkedin: TEAM_LINKEDINS.EDI_LINKEDIN,
     shouldSplitName: true,
   },
   {
@@ -59,8 +46,8 @@ export const TEAM_MEMBERS = [
     lastName: "Ciobotaru",
     name: "Diana",
     role: "Design",
-    image: Diana,
-    linkedin: DIANA_LINKEDIN,
+    image: getTeamImage("diana"),
+    linkedin: TEAM_LINKEDINS.DIANA_LINKEDIN,
     shouldSplitName: false,
   },
   {
@@ -68,8 +55,8 @@ export const TEAM_MEMBERS = [
     lastName: "Zoicaș",
     name: "Ovidiu",
     role: "Marketing",
-    image: Ovidiu,
-    linkedin: OVIDIU_LINKEDIN,
+    image: getTeamImage("ovidiu"),
+    linkedin: TEAM_LINKEDINS.OVIDIU_LINKEDIN,
     shouldSplitName: false,
   },
   {
@@ -77,8 +64,8 @@ export const TEAM_MEMBERS = [
     lastName: "Chelea",
     name: "Diana",
     role: "Official Open Day",
-    image: Diana_Ch,
-    linkedin: DIANA_CH_LINKEDIN,
+    image: getTeamImage("diana_ch"),
+    linkedin: TEAM_LINKEDINS.DIANA_CH_LINKEDIN,
     shouldSplitName: false,
   },
   {
@@ -86,8 +73,8 @@ export const TEAM_MEMBERS = [
     lastName: "Ștefură",
     name: "Teodora-Gabriela",
     role: "FR Corporate",
-    image: Teo,
-    linkedin: TEO_LINKEDIN,
+    image: getTeamImage("teo"),
+    linkedin: TEAM_LINKEDINS.TEO_LINKEDIN,
     shouldSplitName: true,
   },
   {
@@ -95,8 +82,8 @@ export const TEAM_MEMBERS = [
     lastName: "Eftimie",
     name: "Elisabetta Valentina",
     role: "FR Products",
-    image: Valentina,
-    linkedin: VALENTINA_LINKEDIN,
+    image: getTeamImage("valentina"),
+    linkedin: TEAM_LINKEDINS.VALENTINA_LINKEDIN,
     shouldSplitName: true,
   },
   {
@@ -104,8 +91,8 @@ export const TEAM_MEMBERS = [
     lastName: "Flutur",
     name: "Ancuta Ana-Maria",
     role: "Location, Transport & Accommodation",
-    image: Ancuta,
-    linkedin: ANCUTA_LINKEDIN,
+    image: getTeamImage("ancuta"),
+    linkedin: TEAM_LINKEDINS.ANCUTA_LINKEDIN,
     shouldSplitName: true,
   },
   {
@@ -113,8 +100,8 @@ export const TEAM_MEMBERS = [
     lastName: "Buhati",
     name: "Dana",
     role: "Food",
-    image: Dana,
-    linkedin: DANA_LINKEDIN,
+    image: getTeamImage("dana"),
+    linkedin: TEAM_LINKEDINS.DANA_LINKEDIN,
     shouldSplitName: false,
   },
   {
@@ -122,8 +109,8 @@ export const TEAM_MEMBERS = [
     lastName: "Moldovanu",
     name: "Ioana",
     role: "HR Participants",
-    image: Ioana,
-    linkedin: IOANA_LINKEDIN,
+    image: getTeamImage("ioana"),
+    linkedin: TEAM_LINKEDINS.IOANA_LINKEDIN,
     shouldSplitName: false,
   },
   {
@@ -131,8 +118,8 @@ export const TEAM_MEMBERS = [
     lastName: "Brebu",
     name: "Teodor",
     role: "Activities",
-    image: TeoB,
-    linkedin: TEODOR_LINKEDIN,
+    image: getTeamImage("teob"),
+    linkedin: TEAM_LINKEDINS.TEODOR_LINKEDIN,
     shouldSplitName: false,
   },
 ];

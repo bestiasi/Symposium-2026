@@ -1,7 +1,8 @@
 import { PartnersPageHeader } from "../components/Headers/PartnersHeader";
 import { EventPartnersSection } from "../components/PageSpecific/Partners/EventPartnersSection";
 import { AnnualPartnersSection } from "../components/PageSpecific/Partners/AnnualPartnersSection";
-import { EventSponsorsSection } from "../components/PageSpecific/Partners/EventSponsorsSection";
+import { BarterSponsorsSection } from "../components/PageSpecific/Partners/BarterSponsorsSection";
+import { MediaSponsorsSection } from "../components/PageSpecific/Partners/MediaSponsorsSection";
 
 function Partners() {
   return (
@@ -9,7 +10,8 @@ function Partners() {
       <PartnersPageHeader />
       <EventPartnersSection />
       <AnnualPartnersSection />
-      <EventSponsorsSection />
+      <BarterSponsorsSection />
+      <MediaSponsorsSection />
     </>
   );
 }

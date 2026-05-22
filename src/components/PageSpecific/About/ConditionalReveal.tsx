@@ -1,7 +1,4 @@
-import {
-  GENERAL_APPLICATION_URL,
-  BEST_APPLICATION_URL,
-} from "../../../data/Links";
+import { GENERAL_URLS } from "../../../data/Links";
 import { PrimaryButton } from "../../Universal/PrimaryButton";
 
 interface ConditionalRevealProps {
@@ -26,7 +23,7 @@ const ConditionalReveal = ({ studentType }: ConditionalRevealProps) => {
         <PrimaryButton
           fullWidth
           size="normal"
-          href={GENERAL_APPLICATION_URL}
+          href={GENERAL_URLS.GENERAL_APPLICATION_URL}
           target="_blank"
           analyticsLabel="Apply: Google Form"
         >
@@ -54,7 +51,7 @@ const ConditionalReveal = ({ studentType }: ConditionalRevealProps) => {
         <PrimaryButton
           fullWidth
           size="normal"
-          href={BEST_APPLICATION_URL}
+          href={GENERAL_URLS.BEST_APPLICATION_URL}
           target="_blank"
           analyticsLabel="Apply: BEST Application System"
         >

@@ -3,7 +3,7 @@ import CustomContainer from "../Universal/CustomContainer";
 import lightbulbSvg from "../../assets/svgs/bec.svg";
 import groupPhotoImg from "../../assets/images/group-statue.webp";
 import ReactGA from "react-ga4";
-import { LBG_MAP } from "../../data/Links";
+import { GENERAL_URLS } from "../../data/Links";
 
 const revealLoader = () => import("../PageSpecific/About/ConditionalReveal");
 const ConditionalReveal = lazy(revealLoader);
@@ -164,7 +164,7 @@ export const AboutPageHeader = () => {
                   {/* Row 2: Highlighted Helper Link Underneath */}
                   <div className="group relative">
                     <a
-                      href={LBG_MAP}
+                      href={GENERAL_URLS.LBG_MAP}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center 

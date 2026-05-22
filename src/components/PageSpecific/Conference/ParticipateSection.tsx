@@ -4,13 +4,13 @@ import { PrimaryButton } from "../../Universal/PrimaryButton";
 import { useCountdown } from "../../../hooks/useCountdown";
 import handsIllustration from "../../../assets/svgs/hands-compass.svg";
 import { CONFERENCE_DATE } from "../Conference/TimerDisplay";
-import { OOD_JOIN_FORM_URL } from "../../../data/Links";
+import { GENERAL_URLS } from "../../../data/Links";
 
 export const ParticipateSection = () => {
   const { isFinished } = useCountdown(CONFERENCE_DATE);
 
   const handleJoinClick = () => {
-    window.open(OOD_JOIN_FORM_URL, "_blank");
+    window.open(GENERAL_URLS.OOD_JOIN_FORM_URL, "_blank");
   };
 
   return (

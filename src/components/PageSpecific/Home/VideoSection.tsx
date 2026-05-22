@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import { PROMO_VIDEO_ID } from "../../../data/Links";
+import { GENERAL_URLS } from "../../../data/Links";
 import { CustomSection } from "../../Universal/CustomSection";
 import { SectionContent } from "../../Universal/SectionContent";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
@@ -16,7 +16,7 @@ export const HomeVideoSection = () => {
       <div className="w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-black">
         <div className="relative w-full aspect-video">
           <LiteYouTubeEmbed
-            id={PROMO_VIDEO_ID} // e.g., "dQw4w9WgXcQ" (NOT the full URL)
+            id={GENERAL_URLS.PROMO_VIDEO_ID} // e.g., "dQw4w9WgXcQ" (NOT the full URL)
             title="BIS 2026 Teaser"
             poster="maxresdefault" // Uses the high-res thumbnail
             webp={true} // Uses faster WebP images

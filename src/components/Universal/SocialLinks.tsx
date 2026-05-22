@@ -6,24 +6,18 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 
-import {
-  FACEBOOK_LINK,
-  INSTAGRAM_LINK,
-  LINKEDIN_LINK,
-  TIKTOK_LINK,
-  YOUTUBE_LINK,
-} from "../../data/Links";
+import { BEST_SOCIALS } from "../../data/Links";
 
 import SocialIcon from "./SocialIcon";
 import React from "react";
 
 export default function SocialLinks() {
   const socials = [
-    { icon: FaFacebookF, link: FACEBOOK_LINK },
-    { icon: FaInstagram, link: INSTAGRAM_LINK },
-    { icon: FaLinkedinIn, link: LINKEDIN_LINK },
-    { icon: FaYoutube, link: YOUTUBE_LINK },
-    { icon: FaTiktok, link: TIKTOK_LINK },
+    { icon: FaFacebookF, link: BEST_SOCIALS.FACEBOOK_LINK },
+    { icon: FaInstagram, link: BEST_SOCIALS.INSTAGRAM_LINK },
+    { icon: FaLinkedinIn, link: BEST_SOCIALS.LINKEDIN_LINK },
+    { icon: FaYoutube, link: BEST_SOCIALS.YOUTUBE_LINK },
+    { icon: FaTiktok, link: BEST_SOCIALS.TIKTOK_LINK },
   ];
 
   return (

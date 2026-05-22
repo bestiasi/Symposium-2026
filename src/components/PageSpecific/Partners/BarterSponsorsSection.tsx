@@ -1,16 +1,16 @@
 import { CustomSection } from "../../Universal/CustomSection";
 import { SectionContent } from "../../Universal/SectionContent";
 import SwiperCarousel from "../../Universal/SwiperCarousel";
-import { ES_CAROUSEL_ITEMS } from "../../../data/SponsorsCarouselData";
+import { BS_CAROUSEL_ITEMS } from "../../../data/BarterSponsorsCarouselData";
 
-export const EventSponsorsSection = () => {
-  if (!ES_CAROUSEL_ITEMS || ES_CAROUSEL_ITEMS.length === 0) return null;
+export const BarterSponsorsSection = () => {
+  if (!BS_CAROUSEL_ITEMS || BS_CAROUSEL_ITEMS.length === 0) return null;
 
   return (
     <CustomSection bg="bg-whiteBG" contentClassName="flex flex-col gap-6">
       <SectionContent title="Sponsors" subtitle="Event" className="w-full" />
       <SwiperCarousel
-        data={ES_CAROUSEL_ITEMS}
+        data={BS_CAROUSEL_ITEMS}
         carouselName="Event Sponsors"
         mobileSlidesPerView={1}
         desktopSlidesPerView={4}
