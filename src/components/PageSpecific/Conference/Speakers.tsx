@@ -22,17 +22,16 @@ export const SpeakersSection = () => {
       gap-x-8 gap-y-12 md:gap-x-12 md:gap-y-16 justify-items-center"
       >
         {SPEAKERS_DATA.map((speaker) => (
-          <div key={speaker.id}>
-            <PersonCard
-              lastName={speaker.lastName}
-              name={speaker.name}
-              role={speaker.role}
-              image={speaker.image}
-            />
-          </div>
+          <PersonCard
+            key={speaker.id}
+            lastName={speaker.lastName}
+            name={speaker.name}
+            role={speaker.role}
+            image={speaker.image}
+            linkedinUrl={speaker.linkedin}
+            splitName={speaker.shouldSplitName}
+          />
         ))}
-
-        <PersonCard isAdd role="Join BIS 2026" onClick={handleApplyClick} />
       </div>
     </CustomSection>
   );

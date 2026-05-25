@@ -48,6 +48,12 @@ export const TEAM_LINKEDINS = {
     "https://www.linkedin.com/in/ancuta-ana-maria-flutur-9342a0394/",
 };
 
+export const SPEAKER_LINKS = {
+  CICIA: "",
+  FFFF: "",
+  ESN: "",
+};
+
 // ==========================================
 // 4. PARTNERS & SPONSORS
 // ==========================================
