@@ -1,10 +1,10 @@
-import { SPEAKER_LINKS } from "./Links";
+import { NGO_LINKS } from "./Links";
 import CICIA from "../assets/speakers/cicia.png";
 import FFFF from "../assets/speakers/ffff.png";
 import ESN from "../assets/speakers/esn.jpg";
 
 export interface Speaker {
-  id?: number;
+  id: number;
   lastName: string;
   name: string;
   role: string;
@@ -15,30 +15,30 @@ export interface Speaker {
 
 export const SPEAKERS_DATA: Speaker[] = [
   {
-    id: 1,
+    id: 3,
     lastName: "Tărpescu",
     name: "Cristian",
     role: "President of ESN",
     image: ESN,
-    linkedin: SPEAKER_LINKS.ESN,
+    linkedin: NGO_LINKS.ESN,
     shouldSplitName: false,
   },
   {
-    id: 2,
+    id: 1,
     lastName: "Tăușance",
     name: "Vlad",
     role: "Strategy Director at FFFF",
     image: FFFF,
-    linkedin: SPEAKER_LINKS.FFFF,
+    linkedin: NGO_LINKS.FFFF,
     shouldSplitName: false,
   },
   {
-    id: 3,
+    id: 2,
     lastName: "Andronache",
     name: "Mălina-Georgia",
     role: "Volunteer at CICIA",
     image: CICIA,
-    linkedin: SPEAKER_LINKS.CICIA,
+    linkedin: NGO_LINKS.CICIA,
     shouldSplitName: true,
   },
 ];

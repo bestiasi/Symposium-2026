@@ -54,6 +54,12 @@ export const SPEAKER_LINKS = {
   ESN: "",
 };
 
+export const NGO_LINKS = {
+  CICIA: "https://www.cicia.nt.ro/",
+  FFFF: "https://www.ffff.ro/",
+  ESN: "https://esn.ro/",
+};
+
 // ==========================================
 // 4. PARTNERS & SPONSORS
 // ==========================================

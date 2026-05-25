@@ -4,8 +4,9 @@ import OverprintTitle from "../../Universal/OverprintTitle";
 import { PersonCard } from "../../Universal/PersonCard";
 
 export const SpeakersSection = () => {
+  const sortedSpeakers = [...SPEAKERS_DATA].sort((a, b) => a.id - b.id);
   return (
-    <CustomSection bg="bg-whiteBG" id="speakers">
+    <CustomSection bg="bg-colorBG" id="speakers">
       <OverprintTitle
         title="THE SPEAKERS"
         subtitle="MEET"
@@ -16,7 +17,7 @@ export const SpeakersSection = () => {
         className="grid grid-cols-1 md:grid-cols-3 
       gap-x-8 gap-y-12 md:gap-x-12 md:gap-y-16 justify-items-center"
       >
-        {SPEAKERS_DATA.map((speaker) => (
+        {sortedSpeakers.map((speaker) => (
           <PersonCard
             key={speaker.id}
             lastName={speaker.lastName}
