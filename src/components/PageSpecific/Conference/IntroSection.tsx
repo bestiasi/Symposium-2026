@@ -22,27 +22,26 @@ export const ConferenceIntroSection = () => {
             </p>
             <p>
               Taking place on <strong>July 12th, 2026, in Iași, Romania</strong>
-              , this event brings together students, academics, mentors, and NGO
-              leaders from across Europe to shape the future of new generations
-              and better understand how multicultural societies function.
+              , this event brings together students, academics, mentors, and{" "}
+              <strong>NGO</strong> leaders from across Europe to shape the
+              future of new generations and better understand how multicultural
+              societies function.
             </p>
 
             <p>
               In a globalized world, education thrives on{" "}
-              <strong>cross-cultural</strong>
-              collaboration. We believe that international exchange programs and
-              diverse perspectives are essential for building{" "}
-              <strong>global career</strong>
-              paths and <strong>inclusive professional environments</strong>.
+              <strong>cross-cultural</strong> collaboration. We believe that
+              international exchange programs and diverse perspectives are
+              essential for building <strong>global career</strong> paths and{" "}
+              <strong>inclusive professional environments</strong>.
             </p>
 
             <p>
               <strong>BEST Intercultural Conference</strong> is where
-              multicultural ideas turn into action. Whether you want to explore
+              multicultural ideas turn into action. Whether you want to explore{" "}
               <strong>international opportunities</strong>, connect with
-              speakers and students from around the world, or be inspired by
-              diverse <strong>keynote speakers</strong>, this is the place to
-              be.
+              students from around the world, or be inspired by diverse{" "}
+              <strong>keynote speakers</strong>, this is the place to be.
             </p>
 
             <p className="mt-2">

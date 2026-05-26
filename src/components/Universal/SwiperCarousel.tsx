@@ -25,7 +25,7 @@ const SwiperCarousel = ({
   data,
   mobileSlidesPerView = 1,
   desktopSlidesPerView = 3,
-  aspect = "aspect-[4/5] md:aspect-video",
+  aspect = "aspect-[16/9] md:aspect-square",
   carouselName = "General",
 }: SwiperCarouselProps) => {
   const navigate = useNavigate();

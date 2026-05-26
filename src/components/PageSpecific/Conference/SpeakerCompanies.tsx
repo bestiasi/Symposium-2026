@@ -15,13 +15,13 @@ export const SpeakerCompaniesSection = () => {
     <CustomSection bg="bg-whiteBG">
       <SectionContent title="PARTNERS" subtitle="NGO" className="w-full" />
 
-      <div className="flex flex-col gap-6 md:max-w-4xl mx-auto">
+      <div className="flex flex-col gap-6 md:max-w-[54rem] mx-auto">
         <SwiperCarousel
           data={sortedCarouselItems}
           carouselName="NGO Partners"
-          mobileSlidesPerView={2} // Changed back to 2 so they aren't massive on phones
+          mobileSlidesPerView={1}
           desktopSlidesPerView={3}
-          aspect="aspect-[4/5] md:aspect-square"
+          aspect="aspect-[16/9] md:aspect-square"
         />
       </div>
     </CustomSection>

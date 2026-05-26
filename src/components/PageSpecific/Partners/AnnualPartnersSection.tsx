@@ -5,14 +5,14 @@ import { PA_CAROUSEL_ITEMS } from "../../../data/PACarouselData";
 
 export const AnnualPartnersSection = () => {
   return (
-    <CustomSection bg="bg-colorBG" contentClassName="flex flex-col gap-6">
+    <CustomSection bg="bg-whiteBG" contentClassName="flex flex-col gap-6">
       <SectionContent title="Partners" subtitle="Annual" className="w-full" />
       <SwiperCarousel
         data={PA_CAROUSEL_ITEMS}
         carouselName="Annual Partners"
         mobileSlidesPerView={1}
         desktopSlidesPerView={4}
-        aspect="aspect-[4/5] md:aspect-square"
+        aspect="aspect-[16/9] md:aspect-square"
       />
     </CustomSection>
   );

@@ -21,7 +21,7 @@ export default function OverprintTitle({
       <span
         className="
           col-start-1 row-start-1
-          text-4xl md:text-[3rem]
+          text-[1.688rem] md:text-[3rem]
           font-subtitle
           text-primary/20 
           whitespace-nowrap 
@@ -48,7 +48,7 @@ export default function OverprintTitle({
         className="
           col-start-1 row-start-1
           z-10 
-          text-2xl md:text-[1.6rem]
+          text-[1.4rem] md:text-[1.6rem]
           font-title
           text-darkTxt 
           uppercase 

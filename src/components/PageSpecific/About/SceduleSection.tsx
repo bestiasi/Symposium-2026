@@ -40,7 +40,7 @@ export const ScheduleSection: React.FC = () => {
     <CustomSection id="schedule" bg="bg-whiteBG">
       <OverprintTitle
         title="July 11 — July 22"
-        subtitle="Symposium Schedule"
+        subtitle="Schedule"
         className="mb-16"
       />
 
