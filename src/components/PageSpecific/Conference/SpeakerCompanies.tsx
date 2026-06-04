@@ -12,7 +12,7 @@ export const SpeakerCompaniesSection = () => {
   );
 
   return (
-    <CustomSection bg="bg-colorBG">
+    <CustomSection bg="bg-colorBG" id="speaker-ngos">
       <SectionContent title="PARTNERS" subtitle="NGO" className="w-full" />
 
       <SwiperCarousel

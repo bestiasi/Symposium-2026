@@ -4,6 +4,7 @@ import { SectionContent } from "../../Universal/SectionContent";
 import Host from "../../../assets/images/talking-host2.webp";
 import { FaCommentDots } from "react-icons/fa6";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { GENERAL_URLS } from "../../../data/Links";
 
 export const ConferenceIntroSection = () => {
   return (
@@ -22,7 +23,7 @@ export const ConferenceIntroSection = () => {
               <div className="flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2">
                 <FaCalendarAlt size={13} />
                 <a
-                  href="https://www.google.com/calendar/render?action=TEMPLATE&text=BEST+Intercultural+Conference&dates=20260712T070000Z/20260712T150000Z&details=BEST+Intercultural+Conference+%E2%80%93+part+of+BEST+Iași+Symposium+2026&location=Hotel+Traian%2C+Iași%2C+Romania"
+                  href={GENERAL_URLS.ADD_TO_CALENDAR_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
@@ -33,7 +34,7 @@ export const ConferenceIntroSection = () => {
               <div className="flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2">
                 <FaMapMarkerAlt size={13} />
                 <a
-                  href="https://maps.app.goo.gl/ABaBNfbpdGzmTJWe8"
+                  href={GENERAL_URLS.HOTEL_LOCATION}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"

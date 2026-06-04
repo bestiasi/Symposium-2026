@@ -15,6 +15,9 @@ export const GENERAL_URLS = {
     "https://drive.google.com/file/d/1YLEI5FHHASorHcjkGQ5--JfZj57mstIy/view?usp=sharing",
   GDPR_BEST_LINK:
     "https://drive.google.com/file/d/1eWu-GXhv1RISK5xyh8QP4FA4x5miRXb2/view?usp=sharing",
+  ADD_TO_CALENDAR_LINK:
+    "https://www.google.com/calendar/render?action=TEMPLATE&text=BEST+Intercultural+Conference&dates=20260712T070000Z/20260712T150000Z&details=BEST+Intercultural+Conference+%E2%80%93+part+of+BEST+Iași+Symposium+2026&location=Hotel+Traian%2C+Iași%2C+Romania",
+  HOTEL_LOCATION: "https://maps.app.goo.gl/ABaBNfbpdGzmTJWe8",
 };
 
 // ==========================================
