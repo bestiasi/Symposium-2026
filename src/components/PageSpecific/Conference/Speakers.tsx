@@ -6,7 +6,7 @@ import { PersonCard } from "../../Universal/PersonCard";
 export const SpeakersSection = () => {
   const sortedSpeakers = [...SPEAKERS_DATA].sort((a, b) => a.id - b.id);
   return (
-    <CustomSection bg="bg-colorBG" id="speakers">
+    <CustomSection bg="bg-whiteBG" id="speakers">
       <OverprintTitle
         title="THE SPEAKERS"
         subtitle="MEET"
@@ -14,7 +14,7 @@ export const SpeakersSection = () => {
       />
 
       <div
-        className="grid grid-cols-1 md:grid-cols-3 
+        className="grid grid-cols-1 md:grid-cols-4 
       gap-x-8 gap-y-12 md:gap-x-12 md:gap-y-16 justify-items-center"
       >
         {sortedSpeakers.map((speaker) => (

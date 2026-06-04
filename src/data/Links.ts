@@ -48,16 +48,11 @@ export const TEAM_LINKEDINS = {
     "https://www.linkedin.com/in/ancuta-ana-maria-flutur-9342a0394/",
 };
 
-export const SPEAKER_LINKS = {
-  CICIA: "",
-  FFFF: "",
-  ESN: "",
-};
-
 export const NGO_LINKS = {
   CICIA: "https://www.cicia.nt.ro/",
   FFFF: "https://www.ffff.ro/",
   ESN: "https://esn.ro/",
+  PRIME: "https://www.instagram.com/prime.iasi/",
 };
 
 // ==========================================

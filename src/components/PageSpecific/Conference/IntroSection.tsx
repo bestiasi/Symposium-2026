@@ -2,6 +2,8 @@ import { CustomSection } from "../../Universal/CustomSection";
 import OverprintTitle from "../../Universal/OverprintTitle";
 import { SectionContent } from "../../Universal/SectionContent";
 import Host from "../../../assets/images/talking-host2.webp";
+import { FaCommentDots } from "react-icons/fa6";
+import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export const ConferenceIntroSection = () => {
   return (
@@ -15,37 +17,59 @@ export const ConferenceIntroSection = () => {
         {/* Left Side: Content with Bold Keywords */}
         <SectionContent className="w-full md:w-[60%] text-justify">
           <div className="flex flex-col gap-6 text-darkTxt text-lg leading-relaxed">
+            {/* Quick details row */}
+            <div className="flex flex-wrap gap-4 text-sm font-medium">
+              <div className="flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2">
+                <FaCalendarAlt size={13} />
+                <a
+                  href="https://www.google.com/calendar/render?action=TEMPLATE&text=BEST+Intercultural+Conference&dates=20260712T070000Z/20260712T150000Z&details=BEST+Intercultural+Conference+%E2%80%93+part+of+BEST+Iași+Symposium+2026&location=Hotel+Traian%2C+Iași%2C+Romania"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  July 12th, 2026 · 10:00
+                </a>
+              </div>
+              <div className="flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2">
+                <FaMapMarkerAlt size={13} />
+                <a
+                  href="https://maps.app.goo.gl/ABaBNfbpdGzmTJWe8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  Hotel Traian, Iași
+                </a>
+              </div>
+              <div className="flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2">
+                <FaCommentDots size={13} />
+                <span>English</span>
+              </div>
+            </div>
+
             <p>
               <strong>BEST Intercultural Conference</strong> is a premier
               international event exploring how multiculturalism in today's
               society empowers diversity and drives innovation.
             </p>
             <p>
-              Taking place on <strong>July 12th, 2026, in Iași, Romania</strong>
-              , this event brings together students, academics, mentors, and{" "}
+              This event brings together students, academics, mentors, and{" "}
               <strong>NGO</strong> leaders from across Europe to shape the
               future of new generations and better understand how multicultural
               societies function.
             </p>
-
             <p>
               In a globalized world, education thrives on{" "}
-              <strong>cross-cultural</strong> collaboration. We believe that
-              international exchange programs and diverse perspectives are
-              essential for building <strong>global career</strong> paths and{" "}
+              <strong>cross-cultural</strong> collaboration, international
+              exchange programs and diverse perspectives are essential for
+              building <strong>global career</strong> paths and{" "}
               <strong>inclusive professional environments</strong>.
             </p>
-
             <p>
-              <strong>BEST Intercultural Conference</strong> is where
-              multicultural ideas turn into action. Whether you want to explore{" "}
+              Whether you want to explore{" "}
               <strong>international opportunities</strong>, connect with
               students from around the world, or be inspired by diverse{" "}
               <strong>keynote speakers</strong>, this is the place to be.
-            </p>
-
-            <p className="mt-2">
-              Let's reimagine a <strong>multicultural world</strong> together!
             </p>
           </div>
         </SectionContent>

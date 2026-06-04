@@ -12,18 +12,16 @@ export const SpeakerCompaniesSection = () => {
   );
 
   return (
-    <CustomSection bg="bg-whiteBG">
+    <CustomSection bg="bg-colorBG">
       <SectionContent title="PARTNERS" subtitle="NGO" className="w-full" />
 
-      <div className="flex flex-col gap-6 md:max-w-[54rem] mx-auto">
-        <SwiperCarousel
-          data={sortedCarouselItems}
-          carouselName="NGO Partners"
-          mobileSlidesPerView={1}
-          desktopSlidesPerView={3}
-          aspect="aspect-[16/9] md:aspect-square"
-        />
-      </div>
+      <SwiperCarousel
+        data={sortedCarouselItems}
+        carouselName="NGO Partners"
+        mobileSlidesPerView={1}
+        desktopSlidesPerView={4}
+        aspect="aspect-[16/9] md:aspect-square"
+      />
     </CustomSection>
   );
 };
