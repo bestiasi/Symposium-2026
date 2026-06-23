@@ -1,21 +1,28 @@
-import { useCountdown, formatTime } from "../../../hooks/useCountdown";
+import { formatTime } from "../../../hooks/useCountdown";
 import { memo } from "react";
 
 // --- CONFIGURATION ---
-// [!] SET THE END DATE HERE (Format: YYYY-MM-DDTHH:MM:SS)
-export const CONFERENCE_DATE = "2026-06-21T23:59:59";
+export const CONFERENCE_DATE = "2026-06-28T23:59:59";
 
-// 1. ISOLATED COMPONENT
-export const TimerDisplay = () => {
-  const { days, hours, minutes, seconds, isFinished } =
-    useCountdown(CONFERENCE_DATE);
+// Define the shape of the incoming countdown props
+interface TimerDisplayProps {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  isFinished: boolean;
+}
 
+// 1. UPDATED COMPONENT (Accepting props now)
+export const TimerDisplay = ({
+  days,
+  hours,
+  minutes,
+  seconds,
+  isFinished,
+}: TimerDisplayProps) => {
   if (isFinished) {
     return (
-      // UPDATED FORMATTING:
-      // - 'w-fit': Prevents the background from stretching across the screen
-      // - 'px-[3vw]': Responsive padding
-      // - 'uppercase tracking-widest': Makes it look like a proper status label
       <div
         className="w-fit bg-primary/90 text-white rounded-xl 
       px-[4vw] py-[1.5vh] md:px-[1.5vw] md:py-[1vh] backdrop-blur-sm shadow-lg"

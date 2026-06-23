@@ -51,15 +51,6 @@ export const TEAM_MEMBERS = [
     shouldSplitName: false,
   },
   {
-    id: 5,
-    lastName: "Zoicaș",
-    name: "Ovidiu",
-    role: "Marketing",
-    image: getTeamImage("ovidiu"),
-    linkedin: TEAM_LINKEDINS.OVIDIU_LINKEDIN,
-    shouldSplitName: false,
-  },
-  {
     id: 6,
     lastName: "Chelea",
     name: "Diana",
@@ -67,15 +58,6 @@ export const TEAM_MEMBERS = [
     image: getTeamImage("diana_ch"),
     linkedin: TEAM_LINKEDINS.DIANA_CH_LINKEDIN,
     shouldSplitName: false,
-  },
-  {
-    id: 7,
-    lastName: "Ștefură",
-    name: "Teodora-Gabriela",
-    role: "FR Corporate",
-    image: getTeamImage("teo"),
-    linkedin: TEAM_LINKEDINS.TEO_LINKEDIN,
-    shouldSplitName: true,
   },
   {
     id: 8,
