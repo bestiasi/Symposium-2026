@@ -2,7 +2,7 @@ import { formatTime } from "../../../hooks/useCountdown";
 import { memo } from "react";
 
 // --- CONFIGURATION ---
-export const CONFERENCE_DATE = "2026-06-28T23:59:59";
+export const CONFERENCE_DATE = "2026-07-01T23:59:59";
 
 // Define the shape of the incoming countdown props
 interface TimerDisplayProps {
