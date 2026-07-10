@@ -6,7 +6,7 @@ import { PersonCard } from "../../Universal/PersonCard";
 export const SpeakersSection = () => {
   const sortedSpeakers = [...SPEAKERS_DATA].sort((a, b) => a.id - b.id);
   return (
-    <CustomSection bg="bg-whiteBG" id="speakers">
+    <CustomSection bg="bg-colorBG" id="speakers">
       <OverprintTitle
         title="THE SPEAKERS"
         subtitle="MEET"
