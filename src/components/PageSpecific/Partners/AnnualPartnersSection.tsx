@@ -2,9 +2,6 @@ import { CustomSection } from "../../Universal/CustomSection";
 import { SectionContent } from "../../Universal/SectionContent";
 import SwiperCarousel from "../../Universal/SwiperCarousel";
 import { PA_CAROUSEL_ITEMS } from "../../../data/PACarouselData";
-import { SPONSOR_LINKS } from "../../../data/Links";
-// Import the specific logo for the featured partner
-import FEATURED_LOGO from "../../../assets/logos/partners/pa/magna.svg";
 
 export const AnnualPartnersSection = () => {
 
