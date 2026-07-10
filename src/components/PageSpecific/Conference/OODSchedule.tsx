@@ -38,7 +38,7 @@ export const OODSchedule: React.FC = () => {
   if (!oodScheduleData.length) return null;
 
   return (
-    <CustomSection id="schedule" bg="bg-whiteBG">
+    <CustomSection id="schedule" bg="bg-colorBG">
       <OverprintTitle
         title="Conference"
         subtitle="Agenda"
