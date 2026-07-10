@@ -46,7 +46,7 @@ const topics = [
 
 export const TopicsSection = () => {
   return (
-    <CustomSection bg="bg-colorBG" id="topics">
+    <CustomSection bg="bg-whiteBG" id="topics">
       <SectionContent title="CONFERENCE TOPICS" subtitle="WHAT WE EXPLORE">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
           {topics.map(({ icon: Icon, label, description, speaker, org }) => (
