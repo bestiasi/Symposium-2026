@@ -1,0 +1,121 @@
+[
+  {
+    "id": "conference-day-1",
+    "label": "Conference Day",
+    "events": [
+      {
+        "time": "09:30 - 10:15",
+        "title": "Check-in and participant welcome",
+        "description": "Registration and signing of attendance and GDPR documents. Participants should arrive by 10:00.",
+        "details": [
+          "Category: Registration",
+          "Organiser: BEST Iași team"
+        ]
+      },
+      {
+        "time": "10:15 - 10:30",
+        "title": "Official opening and BEST Iași presentation",
+        "description": "Opening remarks and a short presentation of BEST Iași.",
+        "details": [
+          "Category: Opening",
+          "Speaker: President of BEST Iași"
+        ]
+      },
+      {
+        "time": "10:30 - 10:45",
+        "title": "INGENIUM presentation",
+        "description": "Presentation of INGENIUM and its role within the university.",
+        "details": [
+          "Category: Opening",
+          "Speaker: Irina Lungu — Vice-Rector for International Relations, TUIASI"
+        ]
+      },
+      {
+        "time": "10:45 - 11:00",
+        "title": "Coffee break",
+        "description": "Coffee, refreshments and pastries.",
+        "details": [
+          "Category: Break"
+        ]
+      },
+      {
+        "time": "11:00 - 11:55",
+        "title": "Youth, Identity and Belonging in a Multicultural World",
+        "description": "Presentation followed by Q&A.",
+        "details": [
+          "Category: Speaker session",
+          "Speaker: Vlad Tăușance — Fundația Friends for Friends"
+        ]
+      },
+      {
+        "time": "11:55 - 12:05",
+        "title": "Refreshment break",
+        "description": "Short break with refreshments.",
+        "details": [
+          "Category: Break"
+        ]
+      },
+      {
+        "time": "12:05 - 12:50",
+        "title": "Power, Inequality and Opportunity in STEM",
+        "description": "Presentation followed by Q&A.",
+        "details": [
+          "Category: Speaker session",
+          "Speaker: Mălina Andronache — CICIA"
+        ]
+      },
+      {
+        "time": "12:50 - 13:30",
+        "title": "Brunch",
+        "description": "Brunch and informal discussions.",
+        "details": [
+          "Category: Meal"
+        ]
+      },
+      {
+        "time": "13:30 - 14:15",
+        "title": "How Online Media Shapes Cultural Perception and Inclusion",
+        "description": "Presentation followed by Q&A.",
+        "details": [
+          "Category: Speaker session",
+          "Speaker: Bianca Spătărescu — PRIME Iași"
+        ]
+      },
+      {
+        "time": "14:15 - 14:30",
+        "title": "Coffee break",
+        "description": "Coffee and refreshments.",
+        "details": [
+          "Category: Break"
+        ]
+      },
+      {
+        "time": "14:30 - 15:15",
+        "title": "Studying & Working Abroad: Global Mobility and Cultural Adaptation",
+        "description": "Presentation followed by Q&A.",
+        "details": [
+          "Category: Speaker session",
+          "Speaker: Cristian Târpescu — ESN Iași"
+        ]
+      },
+      {
+        "time": "15:15 - 15:20",
+        "title": "Closing remarks and feedback",
+        "description": "Short recap, acknowledgements and feedback form.",
+        "details": [
+          "Category: Closing",
+          "Organiser: BEST Iași team"
+        ]
+      },
+      {
+        "time": "15:20 - 16:00",
+        "title": "Networking",
+        "description": "Open networking session.",
+        "details": [
+          "Category: Networking",
+          "Participants: All participants"
+        ]
+      }
+    ]
+  }
+]
